@@ -31,7 +31,7 @@
 
 /// 初始化
 /// @param inView 所在视图
-/// @param magin 菜单上下边距 edge的作用是上方下方有需要让开的按钮或tabbar
+/// @param spacing 菜单上下边距 作用是上方或者下方有需要让开的按钮或tabbar
 /// @param limit 限制可以是行数 也可以是高度
 /// @param cancelHeight 最小取消高度
 /// @param radius 圆角半径
@@ -43,7 +43,7 @@
 
 /// 初始化
 /// @param inView 所在视图
-/// @param magin 菜单上下边距 edge的作用是上方下方有需要让开的按钮或tabbar
+/// @param spacing 菜单上下边距 作用是上方或者下方有需要让开的按钮或tabbar
 /// @param limit 限制可以是行数 也可以是高度
 /// @param cancelHeight 最小取消高度
 /// @param radius 圆角半径

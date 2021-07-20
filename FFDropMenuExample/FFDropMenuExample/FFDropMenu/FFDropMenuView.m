@@ -137,13 +137,18 @@
         self.maskLayer.path = [self generateMaskPathWithHeight:0].CGPath;
     }
     
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    transition.duration = .1;
     // 隐藏其他菜单
-    
     [self.menuMap enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, UIView <FFDropMenuProtocol> * _Nonnull obj, BOOL * _Nonnull stop) {
         
         obj.hidden = ![key isEqualToString:identifier];
         
     }];
+    [self.containerView.layer addAnimation:transition forKey:nil];
+    
+    
     
     
     self.currentMenu = [self.menuMap valueForKey:identifier];
